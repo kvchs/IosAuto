@@ -70,6 +70,8 @@ https://blog.csdn.net/qq_31362767/article/details/123180809
   "appium:xcodeSigningId": "iPhone Developer"
 }
 ```
+注:其他参数,app+文件路径
+
 
 #### 参考文献
 https://appium.io/
