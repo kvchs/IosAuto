@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e892f91-60a5-47fb-beaa-dd1b00120edb" name="Default Changelist" comment="feat: 搭建IOS&amp;Appium运行环境">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ios/SampleIOSTest.java" afterDir="false" />
+    <list default="true" id="8e892f91-60a5-47fb-beaa-dd1b00120edb" name="Default Changelist" comment="feat: 实现登陆操作">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ios/base/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/ios/utils/DesiredCapabilitiesConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ios.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demo/TestHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ios/SampleIOSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ios/SampleIOSTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,22 +123,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstIOSTest.sampleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="IosAuto" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ios.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="ios" />
-      <option name="MAIN_CLASS_NAME" value="ios.FirstIOSTest" />
-      <option name="METHOD_NAME" value="sampleTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="FirstIOSTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IosAuto" />
       <extension name="coverage">
@@ -190,13 +176,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestHomePage.test" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="IosAuto" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.TestHomePage" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SampleIOSTest.testSampleTest" />
+        <item itemvalue="TestNG.TestHomePage.test" />
         <item itemvalue="TestNG.FirstIOSTest" />
         <item itemvalue="TestNG.FirstIOSTest.sampleTest" />
         <item itemvalue="JUnit.FirstIOSTest" />
-        <item itemvalue="JUnit.FirstIOSTest.sampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +240,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659357731721</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: 实现登陆操作">
+      <created>1659368784744</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659368784744</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -295,7 +306,8 @@
     <MESSAGE value="init env" />
     <MESSAGE value="添加main方法" />
     <MESSAGE value="feat: 搭建IOS&amp;Appium运行环境" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 搭建IOS&amp;Appium运行环境" />
+    <MESSAGE value="feat: 实现登陆操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 实现登陆操作" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
