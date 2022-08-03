@@ -5,9 +5,13 @@ import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.TouchAction;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
+import io.appium.java_client.touch.WaitOptions;
 import io.appium.java_client.touch.offset.PointOption;
 import ios.base.BaseTest;
+import ios.keyword.Scroll;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedCondition;
@@ -22,6 +26,8 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class SampleIOSTest extends BaseTest{
+
+    final static Logger log = Logger.getLogger(SampleIOSTest.class);
 
     @Test
     public void testSampleTest() {
@@ -76,6 +82,8 @@ public class SampleIOSTest extends BaseTest{
             // 隐藏软键盘
             TouchAction touchAction = new TouchAction(appiumDriver);
             touchAction.tap(new PointOption().withCoordinates(345, 343)).perform();
+
+
             Thread.sleep(2000);
             appiumDriver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Sign Up\"]")).click();
 
@@ -100,18 +108,29 @@ public class SampleIOSTest extends BaseTest{
         }
 
         switchToView(appiumDriver, "NATIVE", By.id("test"));
+        scrollTest();
     }
 
     public void switchToView(IOSDriver driver, String view, By by){
-        System.out.println("Current focus view is " + driver.getContext());
+        log.info("Current focus view is " + driver.getContext());
         Set<String> contextHandles = appiumDriver.getContextHandles();
         for (String contextHandle: contextHandles){
             if (contextHandle.contains(view)){
                 driver.context(contextHandle);
-                System.out.println("Current focus view is " + driver.getContext());
+                log.info("Current focus view is " + driver.getContext());
 //                driver.findElement(by).click();
                 break;
             }
         }
+    }
+
+    public void scrollTest(){
+        Dimension size = appiumDriver.manage().window().getSize();
+        int startX = (int) (size.width * 0.5);
+        int startY = (int) (size.height * 0.8);
+        int endX = (int) (size.width * 0.2);
+        int endY = (int) (size.height * 0.2);
+        Scroll.scrollUp(appiumDriver, startX, startY, endX, endY);
+
     }
 }

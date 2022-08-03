@@ -1,5 +1,6 @@
 package ios.utils;
 
+import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
@@ -35,6 +36,10 @@ public class DesiredCapabilitiesConfiguration {
         desiredCapabilities.setCapability("appium:connectHardwareKeyboard", true);
 //      注意：  browserName（浏览器访问） 和 bundleId（app） 不能同时配置
 //      desiredCapabilities.setCapability("browserName", "safari");
+
+//      APP安装包
+//      desiredCapabilities.setCapability(MobileCapabilityType.APP, "app路径");
+
 
         return desiredCapabilities;
     }

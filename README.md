@@ -88,6 +88,14 @@ https://blog.csdn.net/qq_31362767/article/details/123180809
 
 ![img_6.png](img_6.png)
 
+#### demo项目
+https://github.com/dkhamsing/open-source-ios-apps
+![img_7.png](img_7.png)
+
+#### WDA(Web Driver Agent)
+![img_8.png](img_8.png)
+
 #### 参考文献
 https://appium.io/
 https://github.com/sham-kumar-brainx/Sign_Up_Demo(XCode测试应用)
+https://www.youtube.com/playlist?list=PL-AJRKaxM-cb98PSYBpIQ9g_Vo1sn8L7f
