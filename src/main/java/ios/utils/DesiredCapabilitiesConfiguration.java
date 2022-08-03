@@ -1,5 +1,6 @@
 package ios.utils;
 
+import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.io.IOException;
@@ -32,7 +33,8 @@ public class DesiredCapabilitiesConfiguration {
         desiredCapabilities.setCapability("appium:includeSafariInWebviews", true);
         desiredCapabilities.setCapability("appium:newCommandTimeout", 3600);
         desiredCapabilities.setCapability("appium:connectHardwareKeyboard", true);
-
+//      注意：  browserName（浏览器访问） 和 bundleId（app） 不能同时配置
+//      desiredCapabilities.setCapability("browserName", "safari");
 
         return desiredCapabilities;
     }

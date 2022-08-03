@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e892f91-60a5-47fb-beaa-dd1b00120edb" name="Default Changelist" comment="feat: DesiredCapabilities设置配置化">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ios/utils/ConfigReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+    <list default="true" id="8e892f91-60a5-47fb-beaa-dd1b00120edb" name="Default Changelist" comment="feat: 添加公共配置类">
+      <change afterPath="$PROJECT_DIR$/img_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/demo/Log4JTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ios/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ios/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ios/SampleIOSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ios/SampleIOSTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ios/utils/DesiredCapabilitiesConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ios/utils/DesiredCapabilitiesConfiguration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,7 +110,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.SampleIOSTest.testSampleTest">
+  <component name="RunManager" selected="TestNG.Log4JTest.test">
     <configuration name="ConfigReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ios.utils.ConfigReader" />
       <module name="IosAuto" />
@@ -137,17 +141,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstIOSTest.sampleTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Log4JTest.test" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="IosAuto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ios.*" />
+          <option name="PATTERN" value="demo.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ios" />
-      <option name="MAIN_CLASS_NAME" value="ios.FirstIOSTest" />
-      <option name="METHOD_NAME" value="sampleTest" />
+      <option name="PACKAGE_NAME" value="demo" />
+      <option name="MAIN_CLASS_NAME" value="demo.Log4JTest" />
+      <option name="METHOD_NAME" value="test" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -193,11 +197,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.Log4JTest.test" />
         <item itemvalue="TestNG.SampleIOSTest.testSampleTest" />
         <item itemvalue="Application.ConfigReader" />
         <item itemvalue="TestNG.TestHomePage.test" />
         <item itemvalue="TestNG.FirstIOSTest" />
-        <item itemvalue="TestNG.FirstIOSTest.sampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659410764832</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: 添加公共配置类">
+      <created>1659497126885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1659497126885</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -312,7 +323,8 @@
     <MESSAGE value="feat: 搭建IOS&amp;Appium运行环境" />
     <MESSAGE value="feat: 实现登陆操作" />
     <MESSAGE value="feat: DesiredCapabilities设置配置化" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: DesiredCapabilities设置配置化" />
+    <MESSAGE value="feat: 添加公共配置类" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: 添加公共配置类" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">

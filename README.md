@@ -72,6 +72,21 @@ https://blog.csdn.net/qq_31362767/article/details/123180809
 ```
 注:其他参数,app+文件路径
 
+#### Android 
+![img_5.png](img_5.png)
+
+#### Appium inspector访问浏览器
+```json
+{
+    "platformNane": "105",
+    "automationName": "XCUITest",
+    "deviceName": "iPhone x (11.2)",
+    "udid": "8F467540-9C4E-4AC9-8388-0997EAA67C71",
+    "browserNane": "safari"
+}
+```
+
+![img_6.png](img_6.png)
 
 #### 参考文献
 https://appium.io/

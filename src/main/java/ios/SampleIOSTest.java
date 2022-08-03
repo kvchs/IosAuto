@@ -18,6 +18,7 @@ import org.testng.annotations.Test;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 public class SampleIOSTest extends BaseTest{
@@ -56,6 +57,9 @@ public class SampleIOSTest extends BaseTest{
 //
 //        appiumDriver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 
+        if (appiumDriver.getCapabilities().getBrowserName().equals("safari")){
+            appiumDriver.get("http://www.baidu.com");
+        }
         appiumDriver.findElement(new AppiumBy.ByAccessibilityId("Group 5318")).getAttribute("type").equals("XCUIElementTypeImage");
         WebElement element = appiumDriver.findElement(By.xpath("//*[@value='First Name']"));
         try {
@@ -85,5 +89,29 @@ public class SampleIOSTest extends BaseTest{
         }
         System.out.println(element);
 
+        // current focus view
+        System.out.println(appiumDriver.getContext());
+        Set<String> contextHandles = appiumDriver.getContextHandles();
+
+        // 切换不同的content(WebView and Native)
+        for (String content:contextHandles){
+            System.out.println(content);
+            appiumDriver.context(content);
+        }
+
+        switchToView(appiumDriver, "NATIVE", By.id("test"));
+    }
+
+    public void switchToView(IOSDriver driver, String view, By by){
+        System.out.println("Current focus view is " + driver.getContext());
+        Set<String> contextHandles = appiumDriver.getContextHandles();
+        for (String contextHandle: contextHandles){
+            if (contextHandle.contains(view)){
+                driver.context(contextHandle);
+                System.out.println("Current focus view is " + driver.getContext());
+//                driver.findElement(by).click();
+                break;
+            }
+        }
     }
 }
