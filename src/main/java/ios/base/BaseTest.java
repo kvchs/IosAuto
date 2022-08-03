@@ -1,6 +1,8 @@
 package ios.base;
 
+import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.ios.IOSDriver;
+import ios.utils.ConfigReader;
 import ios.utils.DesiredCapabilitiesConfiguration;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.AfterClass;
@@ -21,7 +23,14 @@ public class BaseTest {
     public void ExecConfiguration() throws MalformedURLException {
 
 
-        URL remoteUrl = new URL("http://127.0.0.1:4723/wd/hub");
+        URL remoteUrl = new URL(ConfigReader.getAppiumServerUrl());
+
+        if (ConfigReader.getPlatform().equals("IOS")){
+            appiumDriver = new IOSDriver(remoteUrl, new DesiredCapabilitiesConfiguration().buildDesiredCapabilities());
+        }else if(ConfigReader.getPlatform().equals("ANDROID")){
+//            appiumDriver = new AndroidDriver(remoteUrl, new DesiredCapabilitiesConfiguration().buildDesiredCapabilities())
+            System.out.println("初始化Android环境");
+        }
 
         appiumDriver = new IOSDriver(remoteUrl, new DesiredCapabilitiesConfiguration().buildDesiredCapabilities());
 

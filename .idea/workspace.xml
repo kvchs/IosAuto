@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e892f91-60a5-47fb-beaa-dd1b00120edb" name="Default Changelist" comment="feat: 实现登陆操作">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ios/base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ios/utils/DesiredCapabilitiesConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/ios.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/demo/TestHomePage.java" afterDir="false" />
+    <list default="true" id="8e892f91-60a5-47fb-beaa-dd1b00120edb" name="Default Changelist" comment="feat: DesiredCapabilities设置配置化">
+      <change afterPath="$PROJECT_DIR$/src/main/java/ios/utils/ConfigReader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ios/SampleIOSTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ios/SampleIOSTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ios/base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ios/base/BaseTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,17 +107,15 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG.SampleIOSTest.testSampleTest">
-    <configuration name="FirstIOSTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ConfigReader" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ios.utils.ConfigReader" />
       <module name="IosAuto" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ios.*" />
+          <option name="PATTERN" value="ios.utils.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="ios" />
-      <option name="MAIN_CLASS_NAME" value="ios.FirstIOSTest" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -197,10 +194,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SampleIOSTest.testSampleTest" />
+        <item itemvalue="Application.ConfigReader" />
         <item itemvalue="TestNG.TestHomePage.test" />
         <item itemvalue="TestNG.FirstIOSTest" />
         <item itemvalue="TestNG.FirstIOSTest.sampleTest" />
-        <item itemvalue="JUnit.FirstIOSTest" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659368784744</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: DesiredCapabilities设置配置化">
+      <created>1659410764832</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1659410764832</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -307,7 +311,8 @@
     <MESSAGE value="添加main方法" />
     <MESSAGE value="feat: 搭建IOS&amp;Appium运行环境" />
     <MESSAGE value="feat: 实现登陆操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: 实现登陆操作" />
+    <MESSAGE value="feat: DesiredCapabilities设置配置化" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: DesiredCapabilities设置配置化" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
