@@ -75,6 +75,8 @@ public class SampleIOSTest extends BaseTest{
             appiumDriver.findElement(By.xpath("//*[@value='Password']")).sendKeys("pwd");
             WebElement element2 = appiumDriver.findElement(By.xpath("//XCUIElementTypeApplication[@name=\"Sign_Up_Demo\"]/XCUIElementTypeWindow/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther/XCUIElementTypeOther[4]/XCUIElementTypeTextField"));
             element2.sendKeys("23423");
+            element2.getLocation().getX();
+            element2.getLocation().getY();
             appiumDriver.findElement(By.xpath("//XCUIElementTypeButton[@name=\"Sign Up\"]"));
 
 //            appiumDriver.hideKeyboard(); IOS上隐藏软键盘不生效
